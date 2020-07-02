@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>CSS Practice Mockup</title>
 
@@ -13,6 +13,8 @@
     <meta name="description" content="A website without a real purpose, to demonstrate some CSS design.">
     <meta name="author" content="James Grieve">
 
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
     <!-- Style(s): -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -20,53 +22,101 @@
     <!-- defer attribute will cause this script to wait until the body is loaded before executing (important for DOM / element manipulation by scripts) -->
     <!-- <script src="js/scripts.js" type="text/javascript" defer></script> -->
   </head>
-  <body>
-    <header>
-        <h1></h1>
-        <!-- Topic Nav -->
-        <nav>
-            <ul>
-
-            </ul>
-            <input type="text">
-        </nav>
-    </header>
-    <main>
-        <!-- Above 'Green Line' Row-->
-        <!-- Page Nav -->
-        <nav>
-
-        </nav>
-        <!-- Below 'Green Line' Row-->
-        <div>
-            <!-- Left of 'Purple Line' Column -->
-            <!-- Section Nav -->
-            <nav>
-
+  <body class="flex">
+    <div id="container" class="border">
+        <header class="flex">
+            <h1 class="border"><img src="img/logo.png" alt="LOGO"></h1>
+            <!-- Topic Nav -->
+            <nav id="nav-topic">
+                <ul class="flex">
+                    <li><a href="#">Topic 1</a></li>
+                    <li><a href="#">Topic 2</a></li>
+                    <li><a href="#">Topic 3</a></li>
+                    <li><a href="#">Topic 4</a></li>
+                </ul>
+                <input type="text">
             </nav>
-            <!-- Right of 'Purple Line' Column -->
-            <div>
-                <!-- Left of 'Blue Line' Column -->
-                <article>
-                    <img src="" alt="">
-                    <section>
-                        <p></p>
-                        <p></p>
-                    </section>
-                </article>
-                <!-- Right of 'Blue Line' Column -->
-                <div>
-                    <!-- Feature Nav -->
-                    <nav>
-                        
-                    </nav>
-                    <!-- External Nav -->
-                    <nav>
-
-                    </nav>
+        </header>
+        <main>
+            <!-- Above 'Green Line' Row-->
+            <!-- Page Nav -->
+            <nav id="nav-page" class="border">
+                <ul class="flex">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                    <li><a href="#">Page 4</a></li>
+                </ul>
+            </nav>
+            <!-- Below 'Green Line' Row-->
+            <div class="flex">
+                <!-- Left of 'Purple Line' Column -->
+                <!-- Section Nav -->
+                <nav id="nav-section" class="border">
+                    <ul>
+                        <li><a href="#">Section 1</a></li>
+                        <li><a href="#">Section 2</a></li>
+                        <li><a href="#">Section 3</a></li>
+                        <li><a href="#">Section 4</a></li>
+                        <li><a href="#">Section 5</a></li>
+                        <li><a href="#">Section 6</a></li>
+                        <li><a href="#">Section 7</a></li>
+                        <li><a href="#">Section 8</a></li>
+                        <li><a href="#">Section 9</a></li>
+                        <li><a href="#">Section 10</a></li>
+                        <li><a href="#">Section 11</a></li>
+                        <li><a href="#">Section 12</a></li>
+                        <li><a href="#">Section 13</a></li>
+                        <li><a href="#">Section 14</a></li>
+                        <li><a href="#">Section 15</a></li>
+                    </ul>
+                </nav>
+                <!-- Right of 'Purple Line' Column -->
+                <div class="flex">
+                    <!-- Left of 'Blue Line' Column -->
+                    <article>
+                        <img src="img/article.png" alt="A Placeholder for Article Image">
+                        <div class="border">
+                            <h2>Main Article Y'all Are Here For</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                    </article>
+                    <!-- Right of 'Blue Line' Column -->
+                    <div>
+                        <!-- Feature Nav -->
+                        <nav id="nav-feature" class="border">
+                            <ul>
+                                <li><a href="#">Feature 1</a></li>
+                                <li><a href="#">Feature 2</a></li>
+                                <li><a href="#">Feature 3</a></li>
+                                <li><a href="#">Feature 4</a></li>
+                                <li><a href="#">Feature 5</a></li>
+                                <li><a href="#">Feature 6</a></li>
+                            </ul>
+                        </nav>
+                        <!-- External Nav -->
+                        <nav id="nav-external" class="border">
+                            <h2>External Links</h2>
+                            <div class="flex">
+                                <ul>
+                                    <li><a href="#">External 1</a></li>
+                                    <li><a href="#">External 2</a></li>
+                                    <li><a href="#">External 3</a></li>
+                                    <li><a href="#">External 4</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">External 5</a></li>
+                                    <li><a href="#">External 6</a></li>
+                                    <li><a href="#">External 7</a></li>
+                                    <li><a href="#">External 8</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
   </body>
 </html>

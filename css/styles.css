@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    color: firebrick;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.border {
+    border: 2px solid black;
+}
+.desktop-only {
+    display: none;
+}
+/* Container Styles */
+body.flex {
+    justify-content: center;
+}
+body>#container {
+    width: 960px;
+}
+
+/* Header Styles */
+header {
+    border-bottom: 2px solid black;
+}
+header h1 {
+    margin: 10px;
+}
+header nav {
+    margin: 10px;
+}
+header nav ul {
+    width: 250px;
+}
+header input {
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Main Styles */
+main {
+}
+main img {
+    width: 100%;
+}
+/* Page Nav */
+main>nav {
+    padding: /* Top and Bottom */ 20px /* Left and Right */ 250px;
+    margin: 10px;
+}
+
+/* Left of Purple Line */
+#nav-section
+{
+    width: 20%;
+    margin: 0 10px 10px 10px;
+}
+#nav-section li {
+    margin: 15px;
+} 
+
+/* Right of Puple Line */
+main>div>div {
+    width: 80%;
+    margin: 0 10px 10px 0;
+}
+
+/* Left of 'Blue Line' Column */
+main>div>div>article {
+    width: 60%;
+    margin-right: 10px;
+}
+article>div {
+    margin-top: 10px;
+}
+
+/* Right of 'Blue Line' Column */
+main>div>div>div {
+    width: 40%;
+}
+#nav-feature {
+    height: 292.28px;
+}
+#nav-feature li {
+    margin: 15px;
+} 
+
+#nav-external {
+    margin-top: 10px;
+    height: 228px;
+}
+#nav-external h2 {
+    margin: 10px 0 0 10px;
+}
+#nav-external ul {
+    width: 50%;
+    text-align: center;
+}
+#nav-external ul li {
+    margin: 20px 0;
+}
+
+/* Desktop Only */
+@media (min-width: 600px) 
+{
+    .mobile-only {
+        display: none;
+    }
+    .desktop-only {
+        display: unset;
+    }
+}
