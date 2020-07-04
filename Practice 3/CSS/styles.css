@@ -1,0 +1,41 @@
+*{
+    box-sizing: content-box;
+}
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(101, 154, 197);
+}
+
+header a{
+padding: 10px;
+text-decoration-line: unset;
+}
+header img{
+    border-style: solid;
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
+  padding-top:  10px ;
+}
+article{
+    justify-content: space-evenly;
+}
+ footer{
+     border-top: solid;
+ }
+
+ .desktop-only{
+    display: flex;
+}
+
+ @media screen and (max-width: 600px) { 
+    .desktop-only{
+        display: flex;
+
+  }
+
+
