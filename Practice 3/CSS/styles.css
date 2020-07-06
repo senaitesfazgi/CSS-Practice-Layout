@@ -1,6 +1,11 @@
 *{
     box-sizing: content-box;
 }
+
+.desktop-only{
+        display: none;  
+    }
+
 header{
     padding: 10px;
     display: flex;
@@ -8,21 +13,8 @@ header{
     justify-content: space-between
 }
 
-header a{
-padding: 10px;
-text-decoration-line: unset;
-}
 header img{
     border-style: solid;
-}
-
-header ul{
-    display: flex    
-}
-header div{
-    display: flex
-    
-   
 }
 
 .responsive{
@@ -30,23 +22,47 @@ header div{
   height: auto;
   padding-top:  10px ;
 }
-article{
-    justify-content: space-evenly;
-}
+
  footer{
      border-top: solid;
 }
 
-@media (max-width:600px){
-    .desktop-only{
-        display: none;
-    }
+article{
+    justify-content: space-evenly;
+}
 
-    
+main article h1{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 8px 0;  
+}
+
+main aside h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0; 
 }
 
 @media (min-width:600px){
     .mobile-only{
         display: none;
     }
+    
+    .desktop-only{
+        display: unset;  
+    }
+     
+    main{
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-column-gap:10px
+    }
+    
+
+
+    ul#horizontal-list li {
+		display: inline;
+    }
+    
+    
 }
